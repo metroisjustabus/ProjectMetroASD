@@ -5,8 +5,8 @@ Stable technology choices for MetroIsJustABus. Changing any of these needs human
 
 | Area | Choice | Where it is defined |
 |---|---|---|
-| Backend | Go 1.23 + Gin 1.10 | `backend/go.mod`, `Dockerfile` |
-| Frontend | React 18 + Vite 5 (Node 20) | `frontend/package.json`, `Dockerfile` |
+| Backend | Go 1.23 + Gin 1.10 | `services/<name>/go.mod`, `Dockerfile` |
+| Frontend | React 18 + Vite 5 (Node 20) | `web/package.json`, `Dockerfile` |
 | Authentication | JWT issued by the Core Backend; passwords hashed with BCrypt (cost ≥ 10) | `AGENTS.md` §2 |
 | Database | SQLite, one database file per service | `AGENTS.md` §2–3 |
 | Async messaging | RabbitMQ message broker | `docs/requirements.md` §6 |

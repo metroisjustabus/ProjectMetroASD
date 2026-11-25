@@ -1,4 +1,4 @@
-module github.com/jlduni/projectmetroasd/backend
+module github.com/jlduni/projectmetroasd/services/core
 
 go 1.23
 

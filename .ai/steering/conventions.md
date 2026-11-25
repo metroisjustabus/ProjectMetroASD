@@ -7,11 +7,13 @@ in `docs/GITHUB_GUIDELINES.md`.
 
 | Path | Content |
 |---|---|
-| `backend/` | Go/Gin backend (module `github.com/jlduni/projectmetroasd/backend`) |
-| `frontend/` | React/Vite web app |
+| `services/core/`, `services/ticketing/`, `services/notification/` | One Go/Gin service each, with its own `go.mod` (see `docs/architecture.md`) |
+| `web/` | React/Vite web app |
+| `contracts/` | OpenAPI and event schemas between components |
 | `deploy/` | Docker Compose files per environment |
 | `.github/workflows/` | CI and CD pipelines |
 | `docs/requirements.md` | Requirements, assumptions, traceability, decomposition |
+| `docs/architecture.md` | Repository structure and component layout |
 | `docs/planning/` | Task plan, project summary, data model, AI-log template, Git directives |
 | `docs/seed/` | Seed data definitions |
 | `docs/AI_LOGS.md` | AI usage log (one entry per task) |

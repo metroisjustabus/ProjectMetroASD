@@ -1,17 +1,17 @@
 # ---- Stage 1: build the React frontend ----
 FROM node:20-alpine AS frontend
 WORKDIR /frontend
-COPY frontend/package.json ./package.json
+COPY web/package.json ./package.json
 RUN npm install
-COPY frontend/ ./ 
+COPY web/ ./ 
 RUN npm run build
 
 # ---- Stage 2: build the Go backend ----
 FROM golang:1.23-alpine AS backend
 WORKDIR /backend
-COPY backend/go.mod backend/go.sum* ./
+COPY services/core/go.mod services/core/go.sum* ./
 RUN go mod download
-COPY backend/ ./
+COPY services/core/ ./
 RUN CGO_ENABLED=0 GOOS=linux go build -o /out/metro .
 
 # ---- Stage 3: minimal runtime ----

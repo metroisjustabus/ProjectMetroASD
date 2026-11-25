@@ -1,0 +1,3 @@
+{
+  "$comment": "JSON Schema for the TripDiverted event payload, published by Core and consumed by Notification. Not defined yet."
+}

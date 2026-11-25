@@ -1,0 +1,2 @@
+# OpenAPI contract for the core service: every REST endpoint, request and response. Written and
+# approved before the endpoints are implemented, and used by contract tests.

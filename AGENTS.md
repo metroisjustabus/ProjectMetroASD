@@ -11,6 +11,7 @@ tell the human about the conflict.
 |---|---|
 | Requirements (FR1–FR20, NFR1–NFR8), assumptions AM/IN/MI, decomposition | `docs/requirements.md` |
 | Stack | `.ai/steering/tech-stack.md` |
+| Repository structure / components | `docs/architecture.md` |
 | Data model (17 tables) | `docs/planning/Dados_Seed.md` |
 | Seed data definitions | `docs/seed/` |
 | Task plan / owners | `docs/planning/Plano_Tarefas.md` |
@@ -22,8 +23,8 @@ logic, in commit messages and in PR descriptions.
 
 ## 2. Stack (do not change without human approval)
 
-- Backend: **Go + Gin** (`backend/`, module `github.com/jlduni/projectmetroasd/backend`)
-- Frontend: **React + Vite** (`frontend/`)
+- Backend: **Go + Gin**, one module per service in `services/<name>/` (e.g. `github.com/jlduni/projectmetroasd/services/core`)
+- Frontend: **React + Vite** (`web/`)
 - Auth: **JWT** issued by the Core Backend; passwords stored with **BCrypt** (cost ≥ 10)
 - DB: **SQLite** (one database file per service)
 - Async: message broker (RabbitMQ, per `docs/requirements.md` §6)
