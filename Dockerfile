@@ -1,11 +1,3 @@
-#FROM python:3.12-slim
-#WORKDIR /app
-#COPY src/ ./src/
-#EXPOSE 5000
-#HEALTHCHECK --interval=30s --timeout=3s --start-period=5s \
-#CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:5000/health')"
-#CMD ["python", "src/main.py"]
-
 # ---- Stage 1: build the React frontend ----
 FROM node:20-alpine AS frontend
 WORKDIR /frontend

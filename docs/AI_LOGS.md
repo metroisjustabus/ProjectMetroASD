@@ -1,7 +1,7 @@
 # AI Logs — Registo Diário de Uso de IA
 
 Evidências e métricas do uso de LLMs e agentes de IA ao longo do projeto
-(template: `docs/excels/Guia_Reg_IA`, Parte 2). Os logs completos das sessões estão em
+(template: `docs/planning/Guia_Reg_IA.md`, Parte 2). Os logs completos das sessões estão em
 `convo_log_files/`.
 
 ## Campos
@@ -46,7 +46,7 @@ Evidências e métricas do uso de LLMs e agentes de IA ao longo do projeto
 | [LOG-015](#log-015) | 2026-11-10 | Rodrigo R. | Processo / Git | CODEOWNERS e conversão do plano Excel para Markdown | POR COMPLETAR | POR COMPLETAR | POR COMPLETAR | `f2e303f`, `f20691f` |
 | [LOG-016](#log-016) | 2026-11-14 a 2026-11-16 | JLD43 (por confirmar) | DevOps / CD | Pipeline CD: build/push GHCR e deploy para dev | POR COMPLETAR | POR COMPLETAR | POR COMPLETAR | `8156f3d` … `710f902`, PR #9 |
 | [LOG-017](#log-017) | 2026-11-17 | João Canais | Governance / IA | Regra AGENTS.md: seguir GITHUB_GUIDELINES e registar em AI_LOGS | POR COMPLETAR | POR COMPLETAR | POR COMPLETAR | `b738c52`, PR #15 |
-| [LOG-018](#log-018) | 2026-11-24 | Sofia Saraiva | Documentação / Processo | Análise do estado do repo, registo retroativo de commits sem log e reorganização de `convo_log_files/` | Claude Code (Opus 5.5) | POR COMPLETAR | POR COMPLETAR | commit pendente |
+| [LOG-018](#log-018) | 2026-11-24 | Sofia Saraiva | Documentação / Processo | Análise do estado do repo, registo retroativo de commits sem log e reorganização da documentação | Claude Code (Opus 5.5) | POR COMPLETAR | POR COMPLETAR | commit pendente |
 
 ---
 
@@ -287,13 +287,13 @@ Evidências e métricas do uso de LLMs e agentes de IA ao longo do projeto
 
 ### LOG-018
 
-- **Data:** 2026-11-24
+- **Data:** 2026-11-24 a 2026-11-25
 - **Membro:** Sofia Saraiva
 - **Fase SDLC:** Documentação / Processo
-- **Tarefa / Módulo:** Análise do estado do repositório face ao enunciado; registo  dos commits sem entrada no AI_LOGS; reorganização de `convo_log_files/`
+- **Tarefa / Módulo:** Análise do estado do repositório face ao enunciado; registo  dos commits sem entrada no AI_LOGS; reorganização de `convo_log_files/`; limpeza e estruturação da documentação (branch `feature/M3-structuring-docs`)
 - **Ferramenta IA:** Claude
-- **Prompt / Contexto:** Contexto: enunciado do projeto (PDF), AGENTS.md, histórico git, `docs/`, `convo_log_files/`. Resumo: avaliar onde está o projeto; marcar como "por completar" os commits feitos sem log; mover as conversas de `convo_log_files/3/11/` para a convenção `AAAA-MM-DD/LOG-NNN-*.md`; não alterar LOG-003 e LOG-005 (exemplos).
+- **Prompt / Contexto:** Contexto: enunciado do projeto (PDF), AGENTS.md, histórico git, `docs/`, `convo_log_files/`. Resumo: avaliar onde está o projeto; marcar como "por completar" os commits feitos sem log; mover as conversas de `convo_log_files/3/11/` para a convenção `AAAA-MM-DD/LOG-NNN-*.md`; não alterar LOG-003 e LOG-005 (exemplos). Depois: renomear `docs/excels/` para `docs/planning/` com extensão `.md`, mover o CODEOWNERS, apagar duplicados, preencher os ficheiros vazios e atualizar os estados do plano, confirmando cada passo com a humana antes de mover ficheiros.
 - **Autonomia:** POR COMPLETAR
 - **Tempo humano:** POR COMPLETAR
-- **Resultado / Erros:** Criadas entradas LOG-012 a LOG-017 (por completar) a partir do histórico git; conversas do port para Go movidas para `convo_log_files/2026-11-03/` e associadas a LOG-014.
+- **Resultado / Erros:** Criadas entradas LOG-012 a LOG-017 (por completar) a partir do histórico git; conversas do port para Go movidas para `convo_log_files/2026-11-03/` e associadas a LOG-014. `docs/excels/` → `docs/planning/*.md` (referências atualizadas em AGENTS.md, GITHUB_GUIDELINES.md e AI_LOGS.md; registos históricos não alterados). CODEOWNERS movido para `.github/` (antes estava em `.github/workflows/`, onde o GitHub o ignora) e caminhos `/src/`, `/tests/` corrigidos para `/backend/`, `/frontend/`. Apagados `docs/teckStack.md` (duplicado), `.github/workflows/requirements.txt` e o bloco Python comentado do Dockerfile. Preenchidos `.ai/steering/*`, `docs/deliveries.md` e o template `000-feature-example` só com conteúdo já existente nos documentos do projeto. Estados de `Plano_Tarefas.md` e `Resumo_Projeto.md` atualizados com evidência.
 - **Evidência:** commit pendente
