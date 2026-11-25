@@ -34,7 +34,7 @@ Fixes #<n>
 
 ## Registo de IA
 
-Todo o uso de IA é registado em `docs/excels/Guia_Reg_IA`:
+Todo o uso de IA é registado em `docs/planning/Guia_Reg_IA.md`:
 
 | ID Registo | Data | Membro | Fase SDLC | Tarefa | Ferramenta IA | Prompt / contexto | Autonomia (%) | Tempo humano (min) | Resultado / erros | Commit SHA |
 |---|---|---|---|---|---|---|---:|---:|---|---|

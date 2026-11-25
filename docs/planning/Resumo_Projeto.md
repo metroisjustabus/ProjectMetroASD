@@ -3,9 +3,9 @@
 | Milestone / Fase | Data Limite | Estado Atual | Foco Principal |
 |:---|:---:|:---|:---|
 | Milestone 1 – Requirements | 27 Out 2026 | Concluído | Requisitos (FR1-20, NFR1-8) e Arquitetura inicial |
-| Milestone 2.1 – CI & Testes | 13 Nov 2026 | Não Iniciado | Integração contínua, Quality Checks e Testes |
-| Milestone 2.2 – CD & Deploy | 17 Nov 2026 | Não Iniciado | Containerização (Docker) e Deploy p/ Dev |
-| M3 – Modelos de Dados & Seed | 20 Nov 2026 | Não Iniciado | Criação de 17 Tabelas e Dados Iniciais (Seed Data) |
+| Milestone 2.1 – CI & Testes | 13 Nov 2026 | Concluído | Integração contínua, Quality Checks e Testes |
+| Milestone 2.2 – CD & Deploy | 17 Nov 2026 | Concluído (pendências nas tarefas 5, 6 e 8) | Containerização (Docker) e Deploy p/ Dev |
+| M3 – Modelos de Dados & Seed | 20 Nov 2026 | Em Progresso | Criação de 17 Tabelas e Dados Iniciais (Seed Data) |
 | M3 – Backend Core & API | 30 Nov 2026 | Não Iniciado | Gestão de Rede, Disrupções, API REST (FR2-8) |
 | M3 – Ticketing & Ocupação | 30 Nov 2026 | Não Iniciado | Compra, Validação, Capacidade (FR10-17) |
 | M3 – Notificações & Broker | 02 Dez 2026 | Não Iniciado | Subscrições, Alertas, Broker Async (FR18-20) |

@@ -34,8 +34,8 @@ docker-compose*.yml     @JLDuni @J0aoCanais
 Makefile                @JLDuni @J0aoCanais 
 
 # --- Application code ---
-/src/                   @JLDuni @J0aoCanais 
-/tests/                 @JLDuni @J0aoCanais 
+/backend/               @JLDuni @J0aoCanais 
+/frontend/              @JLDuni @J0aoCanais 
 
 # --- Dependency manifests (supply-chain relevant) ---
 package.json            @JLDuni @J0aoCanais 
