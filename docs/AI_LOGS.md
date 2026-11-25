@@ -22,6 +22,11 @@ Evidências e métricas do uso de LLMs e agentes de IA ao longo do projeto
 
 ## Resumo
 
+> **POR COMPLETAR** — registo criado retroativamente para commits que já existem mas não
+> tinham entrada neste log. Os commits e ficheiros indicados são reais; os campos marcados
+> `POR COMPLETAR` têm de ser preenchidos pelo membro que fez o trabalho. Se a tarefa não usou IA,
+> preencher **Ferramenta IA** com `Nenhuma` e **Autonomia** com `0%`.
+
 | ID | Data | Membro | Fase SDLC | Tarefa / Módulo | Ferramenta IA | Autonomia | Tempo Humano | Evidência |
 |---|---|---|---|---|---|---:|---:|---|
 | [LOG-001](#log-001) | 2026-10-10 | João Canais | Requisitos | Extração de ambiguidades do PDF | Gemini 3.5 Pro | 70% | 30 min | `04e7263` |
@@ -35,6 +40,13 @@ Evidências e métricas do uso de LLMs e agentes de IA ao longo do projeto
 | [LOG-009](#log-009) | 2026-11-15 | Rafael Gomes | Governance / Planeamento | Preparação SDD das tarefas M2 de quality gates e testes | ChatGPT Work / Codex | 60% | 60 min | LOG-009 file |
 | [LOG-010](#log-010) | 2026-11-15 | Rafael Gomes | DevOps / CI | Implementação dos quality gates da Task 3 / spec 001 | ChatGPT Work / Codex | 75% | 15 min | `b2c63b5`, PR #4 |
 | [LOG-011](#log-011) | 2026-11-15 | Rafael Gomes | Testing / CI | Implementação dos testes iniciais da Task 4 / spec 002 | ChatGPT Work / Codex | 75% | 25 min | `5a20084`, PR #8 |
+| [LOG-012](#log-012) | 2026-10-06 a 2026-10-13 | JLDuni / Rodrigo R. (por confirmar) | Setup / Estrutura | Estrutura inicial do repositório e sugestão de tech stack | POR COMPLETAR | POR COMPLETAR | POR COMPLETAR | `9aaeb4b`, `388ffaa`, `8223204`, `7656a97` |
+| [LOG-013](#log-013) | 2026-10-27 | João Canais | Requisitos | Secção de participação da IA e decomposição do sistema em requirements.md | POR COMPLETAR | POR COMPLETAR | POR COMPLETAR | `242cf62` |
+| [LOG-014](#log-014) | 2026-11-03 a 2026-11-10 | Rodrigo R. | DevOps / CI | Port de Python para Go/Gin + React/Vite, Dockerfile e CI Docker | POR COMPLETAR | POR COMPLETAR | POR COMPLETAR | `6fd5db1`, `a5bb38d`, `ce56adf`, `abc6b3f`; LOG-014 files |
+| [LOG-015](#log-015) | 2026-11-10 | Rodrigo R. | Processo / Git | CODEOWNERS e conversão do plano Excel para Markdown | POR COMPLETAR | POR COMPLETAR | POR COMPLETAR | `f2e303f`, `f20691f` |
+| [LOG-016](#log-016) | 2026-11-14 a 2026-11-16 | JLD43 (por confirmar) | DevOps / CD | Pipeline CD: build/push GHCR e deploy para dev | POR COMPLETAR | POR COMPLETAR | POR COMPLETAR | `8156f3d` … `710f902`, PR #9 |
+| [LOG-017](#log-017) | 2026-11-17 | João Canais | Governance / IA | Regra AGENTS.md: seguir GITHUB_GUIDELINES e registar em AI_LOGS | POR COMPLETAR | POR COMPLETAR | POR COMPLETAR | `b738c52`, PR #15 |
+| [LOG-018](#log-018) | 2026-11-24 | Sofia Saraiva | Documentação / Processo | Análise do estado do repo, registo retroativo de commits sem log e reorganização de `convo_log_files/` | Claude Code (Opus 5.5) | POR COMPLETAR | POR COMPLETAR | commit pendente |
 
 ---
 
@@ -182,3 +194,106 @@ Evidências e métricas do uso de LLMs e agentes de IA ao longo do projeto
 - **Tempo humano:** 25 min
 - **Resultado / Erros:** Testes de /health e /api/hello adicionados; falha deliberada detetada e revertida; gofmt, go vet, go test, build Docker e smoke tests passaram. CI do PR #8 passou nos jobs quality, tests e build-and-verify.
 - **Evidência:** Issue #5; commit `5a20084`; PR #8; CI run `43903698598`; `convo_log_files/2026-11-15/LOG-011-initial-tests-implementation.md`
+
+### LOG-012
+
+> **POR COMPLETAR** — registo retroativo; preencher os campos marcados.
+
+- **Data:** 2026-10-06 a 2026-10-13
+- **Membro:** POR COMPLETAR (autores git: `JLDuni`, `JLD43`, `Rodrigo R`)
+- **Fase SDLC:** Setup / Estrutura
+- **Tarefa / Módulo:** Estrutura inicial do repositório (`src/`, `.ai/sdd`, `.ai/steering`, `.gitignore`) e sugestão de tech stack (`docs/teckStack.md`)
+- **Ferramenta IA:** POR COMPLETAR
+- **Prompt / Contexto:** POR COMPLETAR
+- **Autonomia:** POR COMPLETAR
+- **Tempo humano:** POR COMPLETAR
+- **Resultado / Erros:** POR COMPLETAR
+- **Evidência:** commits `9aaeb4b`, `388ffaa`, `8223204`, `7656a97`
+
+### LOG-013
+
+> **POR COMPLETAR** — registo retroativo; preencher os campos marcados.
+
+- **Data:** 2026-10-27
+- **Membro:** João Canais
+- **Fase SDLC:** Requisitos
+- **Tarefa / Módulo:** `docs/requirements.md` — secção 6 (decomposição do sistema) e secção 7 (evidência de uso de IA)
+- **Ferramenta IA:** POR COMPLETAR
+- **Prompt / Contexto:** POR COMPLETAR
+- **Autonomia:** POR COMPLETAR
+- **Tempo humano:** POR COMPLETAR
+- **Resultado / Erros:** POR COMPLETAR
+- **Evidência:** commit `242cf62`
+
+### LOG-014
+
+> **POR COMPLETAR** — registo retroativo; preencher os campos marcados.
+
+- **Data:** 2026-11-03 a 2026-11-10
+- **Membro:** Rodrigo R.
+- **Fase SDLC:** DevOps / CI
+- **Tarefa / Módulo:** Port do esqueleto da aplicação de Python/Flask para Go/Gin (backend) e React/Vite (frontend); Dockerfile multi-stage; workflow `ci-docker.yml`
+- **Ferramenta IA:** POR COMPLETAR (as conversas guardadas indicam um assistente de chat; confirmar qual)
+- **Prompt / Contexto:** POR COMPLETAR (conversa completa em `convo_log_files/2026-11-03/`)
+- **Autonomia:** POR COMPLETAR
+- **Tempo humano:** POR COMPLETAR
+- **Resultado / Erros:** POR COMPLETAR
+- **Evidência:** commits `6fd5db1`, `30d1d64`, `a5bb38d`, `ce56adf`, `9f1a0c2`, `abc6b3f`; `convo_log_files/2026-11-03/LOG-014-port-to-go.md`; `convo_log_files/2026-11-03/LOG-014-port-to-go-p2.md`
+
+### LOG-015
+
+> **POR COMPLETAR** — registo retroativo; preencher os campos marcados.
+
+- **Data:** 2026-11-10
+- **Membro:** Rodrigo R.
+- **Fase SDLC:** Processo / Git
+- **Tarefa / Módulo:** Ficheiro CODEOWNERS e conversão do plano Excel para Markdown (`docs/excels/*`)
+- **Ferramenta IA:** POR COMPLETAR
+- **Prompt / Contexto:** POR COMPLETAR
+- **Autonomia:** POR COMPLETAR
+- **Tempo humano:** POR COMPLETAR
+- **Resultado / Erros:** POR COMPLETAR
+- **Evidência:** commits `f2e303f`, `f20691f`, `d58a82e`, `3ab4e50`
+
+### LOG-016
+
+> **POR COMPLETAR** — registo retroativo; preencher os campos marcados.
+
+- **Data:** 2026-11-14 a 2026-11-16
+- **Membro:** POR COMPLETAR (autor git: `JLD43`)
+- **Fase SDLC:** DevOps / CD
+- **Tarefa / Módulo:** Pipeline CD (`cd.yml`): build e push da imagem para GHCR e deploy para o ambiente de desenvolvimento no self-hosted runner (`deploy/docker-compose.dev.yml`) (Tarefas 5–7)
+- **Ferramenta IA:** POR COMPLETAR
+- **Prompt / Contexto:** POR COMPLETAR
+- **Autonomia:** POR COMPLETAR
+- **Tempo humano:** POR COMPLETAR
+- **Resultado / Erros:** POR COMPLETAR (o histórico mostra ~20 commits de correção — `fix`, `testing CD`, healthcheck removido e reposto, nome da imagem GHCR alterado — descrever as falhas e o retrabalho)
+- **Evidência:** commits `8156f3d` a `710f902`; PR #9
+
+### LOG-017
+
+> **POR COMPLETAR** — registo retroativo; preencher os campos marcados.
+
+- **Data:** 2026-11-17
+- **Membro:** João Canais
+- **Fase SDLC:** Governance / IA
+- **Tarefa / Módulo:** AGENTS.md — tornar obrigatório seguir `GITHUB_GUIDELINES.md` e registar cada tarefa em `AI_LOGS.md`; criação de `docs/AI_LOGS.md`
+- **Ferramenta IA:** POR COMPLETAR
+- **Prompt / Contexto:** POR COMPLETAR
+- **Autonomia:** POR COMPLETAR
+- **Tempo humano:** POR COMPLETAR
+- **Resultado / Erros:** POR COMPLETAR
+- **Evidência:** commit `b738c52`; PR #15
+
+### LOG-018
+
+- **Data:** 2026-11-24
+- **Membro:** Sofia Saraiva
+- **Fase SDLC:** Documentação / Processo
+- **Tarefa / Módulo:** Análise do estado do repositório face ao enunciado; registo  dos commits sem entrada no AI_LOGS; reorganização de `convo_log_files/`
+- **Ferramenta IA:** Claude
+- **Prompt / Contexto:** Contexto: enunciado do projeto (PDF), AGENTS.md, histórico git, `docs/`, `convo_log_files/`. Resumo: avaliar onde está o projeto; marcar como "por completar" os commits feitos sem log; mover as conversas de `convo_log_files/3/11/` para a convenção `AAAA-MM-DD/LOG-NNN-*.md`; não alterar LOG-003 e LOG-005 (exemplos).
+- **Autonomia:** POR COMPLETAR
+- **Tempo humano:** POR COMPLETAR
+- **Resultado / Erros:** Criadas entradas LOG-012 a LOG-017 (por completar) a partir do histórico git; conversas do port para Go movidas para `convo_log_files/2026-11-03/` e associadas a LOG-014.
+- **Evidência:** commit pendente
