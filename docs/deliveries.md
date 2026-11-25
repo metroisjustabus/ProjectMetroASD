@@ -18,7 +18,7 @@ section 5), and where the evidence is in this repository. Status as of 2026-11-2
 | Required | Status | Evidence |
 |---|---|---|
 | Automatic build from the repository | Done | `.github/workflows/ci-docker.yml` |
-| Automated tests in the pipeline | Done | `tests` job; `backend/main_test.go` (PR #8) |
+| Automated tests in the pipeline | Done | `tests` job; `services/core/main_test.go` (PR #8) |
 | Basic code quality checks | Done | `quality` job: gofmt, go vet, ESLint (PR #4) |
 | Containerized application | Done | `Dockerfile` (single image: Go backend + React build) |
 | Pipeline produces a deployable version | Done | Image pushed to GHCR tagged with the commit SHA (`cd.yml`) |

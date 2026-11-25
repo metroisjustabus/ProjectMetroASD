@@ -1,0 +1,2 @@
+# Production stack: all services, RabbitMQ and one volume per service database, using the chosen
+# deployment strategy (rolling, blue-green, canary...). Not defined yet.

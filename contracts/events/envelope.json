@@ -1,0 +1,3 @@
+{
+  "$comment": "Common envelope for every event: event_id (consumers drop duplicates by it, AGENTS.md section 4.4), event type, time in UTC and payload. Not defined yet."
+}

@@ -47,6 +47,7 @@ Evidências e métricas do uso de LLMs e agentes de IA ao longo do projeto
 | [LOG-016](#log-016) | 2026-11-14 a 2026-11-16 | JLD43 (por confirmar) | DevOps / CD | Pipeline CD: build/push GHCR e deploy para dev | POR COMPLETAR | POR COMPLETAR | POR COMPLETAR | `8156f3d` … `710f902`, PR #9 |
 | [LOG-017](#log-017) | 2026-11-17 | João Canais | Governance / IA | Regra AGENTS.md: seguir GITHUB_GUIDELINES e registar em AI_LOGS | POR COMPLETAR | POR COMPLETAR | POR COMPLETAR | `b738c52`, PR #15 |
 | [LOG-018](#log-018) | 2026-11-24 | Sofia Saraiva | Documentação / Processo | Análise do estado do repo, registo retroativo de commits sem log e reorganização da documentação | Claude Code (Opus 5.5) | POR COMPLETAR | POR COMPLETAR | commit pendente |
+| [LOG-019](#log-019) | 2026-11-25 | Sofia Saraiva | Arquitetura / Estrutura | Reorganização do repositório por componentes (`services/`, `web/`, `contracts/`) e `docs/architecture.md` | Claude Code (Opus 5.5) | POR COMPLETAR | POR COMPLETAR | commit pendente |
 
 ---
 
@@ -296,4 +297,17 @@ Evidências e métricas do uso de LLMs e agentes de IA ao longo do projeto
 - **Autonomia:** POR COMPLETAR
 - **Tempo humano:** POR COMPLETAR
 - **Resultado / Erros:** Criadas entradas LOG-012 a LOG-017 (por completar) a partir do histórico git; conversas do port para Go movidas para `convo_log_files/2026-11-03/` e associadas a LOG-014. `docs/excels/` → `docs/planning/*.md` (referências atualizadas em AGENTS.md, GITHUB_GUIDELINES.md e AI_LOGS.md; registos históricos não alterados). CODEOWNERS movido para `.github/` (antes estava em `.github/workflows/`, onde o GitHub o ignora) e caminhos `/src/`, `/tests/` corrigidos para `/backend/`, `/frontend/`. Apagados `docs/teckStack.md` (duplicado), `.github/workflows/requirements.txt` e o bloco Python comentado do Dockerfile. Preenchidos `.ai/steering/*`, `docs/deliveries.md` e o template `000-feature-example` só com conteúdo já existente nos documentos do projeto. Estados de `Plano_Tarefas.md` e `Resumo_Projeto.md` atualizados com evidência.
+- **Evidência:** commit pendente
+
+### LOG-019
+
+- **Data:** 2026-11-25
+- **Membro:** Sofia Saraiva
+- **Fase SDLC:** Arquitetura / Estrutura
+- **Tarefa / Módulo:** Reorganizar o repositório por componentes em vez de uma pasta `backend/` única e documentar a estrutura
+- **Ferramenta IA:** Claude
+- **Prompt / Contexto:**  Resumo: planeamento da estrutura do repo e agente pedido para reorganizar o repositório, com cada ficheiro novo contendo apenas um comentário com o seu propósito, e para documentar a estrutura.
+- **Autonomia:** POR COMPLETAR
+- **Tempo humano:** POR COMPLETAR
+- **Resultado / Erros:** `backend/` → `services/core/` (módulo Go renomeado) e `frontend/` → `web/`; criados placeholders para `services/ticketing/`, `services/notification/`, `contracts/` (OpenAPI e JSON Schema dos 6 eventos), `deploy/docker-compose.prod.yml` e `deploy/.env.example`; CI, Dockerfile da raiz, `.gitignore`, `.dockerignore` e CODEOWNERS atualizados; criado `docs/architecture.md` com 7 questões em aberto para a equipa (incluindo duas tabelas que não existem no modelo de dados). A imagem continua a ser única (Dockerfile da raiz); a separação das imagens fica para depois. Validação local (2026-11-25, em contentores Docker iguais ao CI): `npm run lint` e `npm run build` passaram; `gofmt` sem problemas nos 17 ficheiros Go dos 3 serviços; `go vet`, `go test` e `go build` de `services/core` passaram; imagem da raiz construída e smoke test OK (`/health`, `/api/hello` e `/` responderam).
 - **Evidência:** commit pendente
